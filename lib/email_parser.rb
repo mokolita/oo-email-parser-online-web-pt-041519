@@ -11,8 +11,8 @@ class EmailParser
     @email_list = email
   end 
   
-  def parse(email)
-    email.split(",") || email.split(" ")
+  def parse
+    @email.split(",") || @email.split(" ")
     @@all << email 
   end 
 
